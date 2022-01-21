@@ -1,6 +1,6 @@
 {
-  "name": "extract-common-css-didi",
-  "version": "1.1.2",
+  "name": "extract-css-didi",
+  "version": "1.1.3",
   "description": "Extract the same css to common place to reduce the duplicate codes, and reduce package size. \nSort css properties to reduce reflow and repaint, for improving the performance of page render",
   "main": "core/index.js",
   "scripts": {
@@ -10,16 +10,7 @@
     "prod": "webpack --mode=production"
   },
   "keywords": [
-    "common css",
-    "common style",
-    "extract css",
-    "extract style",
-    "extract common css",
-    "extract common style",
-    "sort css",
-    "sort css properties",
-    "vue",
-    "cli"
+    
   ],
   "author": "Lares",
   "license": "ISC",

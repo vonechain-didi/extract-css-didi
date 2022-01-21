@@ -1,4 +1,4 @@
-# extract-common-css
+# extract-css-didi
 
 Extract the same css to common place to reduce the duplicate codes, and reduce package size
 
@@ -10,7 +10,7 @@ Sort css properties to reduce reflow and repaint, for improving the performance 
 
 ## Installation
 ```bash
-npm install extract-common-css
+npm install extract-css-didi
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ Create new file named extract.css.json in the root directory of your project,
 ```
 ### Description
  - entry -> [filePath|Array```<filePath>```], the entry of collecting the style files.
- - destPath -> [filePath], the destPath tell extract-common-css where to put the extracted style.
+ - destPath -> [filePath], the destPath tell extract-css-didi where to put the extracted style.
  - insertInfos -> [Object], contain the infos where to import the **destPath** file.
   - insertFile -> [filePath], which file will import the **destPath** file.
   - insertContent -> [String], the **insertContent** will be put in the **insertFile**, default be appended to the bottom of **insertFile**.
@@ -60,4 +60,4 @@ Create new file named extract.css.json in the root directory of your project,
 ```bash
  extract-css s sort
 ```
-**NOTE:** When config the **sortFiles** or **sortFile**, the extract-common-css will not extract common css between the different files.
+**NOTE:** When config the **sortFiles** or **sortFile**, the extract-css-didi will not extract common css between the different files.
