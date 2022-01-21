@@ -66,7 +66,8 @@ function start(options = {}){
       }
     });
     console.log(styles.length,1)
-    if(currentCommonIndex>-1){
+    const isOnlySort = options.sortFile || config.sortFile || options.sortFiles || config.sortFiles;
+    if(currentCommonIndex>-1 && !isOnlySort){
       console.log('已存在抽离过的公共样式文件');
       styles.splice(currentCommonIndex,1);
       // gf.writeJson(path.join(process.cwd(), './temp/temp_currentCommon.json'),currentCommonInfos, ()=>{
@@ -84,11 +85,12 @@ function start(options = {}){
     if(options.sortFile || config.sortFile){
       // 给单个文件排序
       const filePath = path.join(process.cwd(), options.sortFile || config.sortFile);
+      console.log(filePath)
       const file = styles.filter(item=>item.path===filePath);
       if(file.length){
         sortAttrHandler(file);
       } else {
-        throw new Error('cannot find the file ' + options.sortFile);
+        throw new Error(`cannot find the file ${options.sortFile || config.sortFile}, maybe the file is not imported in the project`);
       }
     } else if (options.sortFiles || config.sortFiles){
       // 给所有文件排序
