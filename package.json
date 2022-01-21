@@ -1,0 +1,60 @@
+{
+  "name": "extract-common-css-didi",
+  "version": "1.1.2",
+  "description": "Extract the same css to common place to reduce the duplicate codes, and reduce package size. \nSort css properties to reduce reflow and repaint, for improving the performance of page render",
+  "main": "core/index.js",
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "test": "node core/test.js",
+    "dev": "webpack --mode=development",
+    "prod": "webpack --mode=production"
+  },
+  "keywords": [
+    "common css",
+    "common style",
+    "extract css",
+    "extract style",
+    "extract common css",
+    "extract common style",
+    "sort css",
+    "sort css properties",
+    "vue",
+    "cli"
+  ],
+  "author": "Lares",
+  "license": "ISC",
+  "bin": {
+    "extract-css": "./bin/extract-css.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.7",
+    "commander": "^8.3.0",
+    "fs-extra": "^10.0.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.8",
+    "@babel/preset-env": "^7.16.8",
+    "@vue/cli-service": "^4.5.15",
+    "babel-loader": "^8.2.3",
+    "less": "^3.13.1",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "homepage": "https://github.com/vonechain-didi/extract-css-didi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vonechain-didi/extract-css-didi.git"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist",
+    "bin"
+  ]
+}

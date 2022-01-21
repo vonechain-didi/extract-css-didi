@@ -1,0 +1,11 @@
+{
+  "entry": "src/main.js",
+  "exclude": [],
+  "include": ["src/routes/router.js","src/routes/chat.js"],
+  "destPath": "src/assets/css/common.less",
+  "insertInfos": {
+    "insertFile": "src/main.js",
+    "insertContent": "import './assets/css/common.less'"
+  },
+  "logOutPut": "logs"
+}
